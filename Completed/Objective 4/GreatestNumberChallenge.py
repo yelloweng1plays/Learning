@@ -1,13 +1,11 @@
 #Write a program to display the larger of two numbers entered
 
-from nntplib import NNTP
-from tkinter import N
+Num1 = float(input("What is your first number to compare?"))
+Num2 = float(input("What is the seccond number to compare?"))
 
-
-Num1 = int(input("Input first Number: "))
-Num2 = int(input("Input seccond number: "))
-
-if Num1 > Num2: 
-    print("The largest number is number 1")
+if Num1 > Num2:
+    print("Number 1: ",Num1," is greater than Number 2: ",Num2)
 elif Num1 < Num2: 
-    print("The largest number is number 2")
+    print("Number 1: ",Num1," is smaller than Number 2: ",Num2)
+else:
+    print("Error: invalid or same numbers")
